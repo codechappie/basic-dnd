@@ -1,0 +1,60 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.container-fluid{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+}
+.options{
+    width: 600px;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    padding: 10px;
+    gap: 5px;
+    grid-template-columns: repeat(3,1fr);
+    background: #b1b1ff;
+    border-radius: 10px;
+}
+.dnd-box{
+    background: #333;
+    color: #fff;
+    width: 100px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    cursor: grab;
+}
+
+.dnd-container{
+    position: relative;
+    border: 3px solid #333;
+    width: 300px;
+    min-height: 100px;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    gap: 10px;    
+    padding: 10px;
+}
+.dnd-container .title{
+    position: absolute;
+    top: 0px;
+    color: #333;
+    height: fit-content;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.dnd-container.blue{
+    border: 3px solid blue;
+}
